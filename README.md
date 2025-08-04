@@ -37,3 +37,56 @@ git clone https://github.com/AkashNeog/ai_secure_scanner.git
 cd ai_secure_scanner
 pip install -r requirements.txt
 streamlit run streamlit_app.py
+
+2. Or Use Web App
+Just visit the deployed app here:
+👉 AI Secure Scanner on Streamlit
+
+📁 File Structure
+ai_secure_scanner/
+├── vuln_scanner.py        # Core scanner logic (AST + comment analysis)
+├── streamlit_app.py       # Streamlit UI frontend
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
+
+💡 Example Scan
+# TODO: Remove hardcoded credentials
+password = "123456"
+eval("some_code")
+import pickle
+
+🛑 Output:
+
+Hardcoded password detected on line 2
+
+Use of eval() is unsafe on line 3
+
+Pickle import detected on line 4
+
+Suspicious comment on line 1
+
+📌 Tech Stack
+Python 3.8+
+
+Streamlit
+
+AST (built-in)
+
+Regex
+
+🧠 Future Enhancements
+ Java & JavaScript vulnerability scanning
+
+ GitHub plugin for PR scanning
+
+ VS Code extension
+
+ AI code auto-fix suggestions
+
+📬 Contact
+Developed by Akash Neog
+📫 Connect on GitHub
+
+🛡️ Disclaimer
+This tool is designed for educational and internal security auditing purposes. It is not a replacement for full-scale static analysis or penetration testing tools.
+
